@@ -16,7 +16,7 @@ def close():
 
 def open_webdriver():
     options = Options()
-    options.headless = False
+    options.headless = True
     driver = webdriver.Firefox(executable_path=os.getcwd() + '/geckodriver', options=options)
     driver.get("https://web.whatsapp.com")
     return driver
@@ -29,6 +29,7 @@ def login_whatsapp(driver):
     print("Sucessfully QR code genereted")
     image = Image.open('screenshot.png')
     image.show()
+    sleep(5)
     input("Scan QR and press anykey to continue...")
     close()
 
@@ -133,7 +134,7 @@ def track(driver,file):
         # aturar el programa
         except KeyboardInterrupt as ki:
             print(ki)
-            print("CTRL-C")
+            print("[Ctrl+C] Program Stopped")
             file.close()
             driver.quit()
             break
@@ -148,5 +149,5 @@ if __name__ == '__main__':
         f = open("guru99.txt", "a+")
         track(driver,f)
     except Exception as e:
-        print("Panic exit")
+        print("Panic exit",e)
         driver.quit()
