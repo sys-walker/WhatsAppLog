@@ -1,6 +1,6 @@
-#!/usr/bin/env python3.7
+#!/usr/bin/env python3
 
-# https://github.com/rizwansoaib/whatsapp-monitor/find/master
+# inspiration https://github.com/rizwansoaib/whatsapp-monitor/
 from selenium.webdriver.firefox.options import Options
 from selenium import webdriver
 import psutil, os, sys
