@@ -13,12 +13,26 @@ sudo apt install python3.*
 pip install -r requirements.txt
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Usage
 ```
 chmod +x Main.py
 python3 Main.py
+```
+## Output
+The output will be stored into file WhatsApp_log.txt
+```
+============= number test =============
+Session Started at 2020-02-14 15:09:12
+
+number test [HIDDEN] disconnected/tipying 15:09:12
+
+number test online 15:09:12
+
+number test disconnected 15:09:12
+
+number test online 15:09:12
+
+number test [HIDDEN] disconnected/tipying 15:09:12
 ```
 
 
