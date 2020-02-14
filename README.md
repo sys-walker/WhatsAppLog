@@ -3,7 +3,7 @@
 Sample text
 
 ## Getting Started
-Sample text
+This program for now only works in Linux
 ### Prerequisites
 
 What things you need to install the software and how to install them
