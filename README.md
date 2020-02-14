@@ -18,7 +18,7 @@ End with an example of getting some data out of the system or using it for a lit
 ## Usage
 ```
 chmod +x Main.py
-./Main.py
+python3 Main.py
 ```
 
 
