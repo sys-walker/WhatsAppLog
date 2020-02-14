@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.7
+#!/usr/bin/env python3
 
 # https://github.com/rizwansoaib/whatsapp-monitor/find/master
 from selenium.webdriver.firefox.options import Options
