@@ -83,54 +83,31 @@ def track(driver,file):
                 sys.stdout.flush()
 
                 statusList= list(driver.find_elements_by_class_name("_315-i"))
-
-
                 status = "Undefined" if len(statusList)==0 else statusList[0].text
+                
                 sys.stdout.flush()
-
                 if len(statusList)!=0:
                     if status == 'en línea':
-
                         fst_of = False
-                        # print("EN LINEA------>",fst_on)
-                        # print("offline",fst_of)
                         if fst_on == False:
                             print("\n", name, status, t[11:])
-
+                            print("\n"+name+" "+status+" "+ str(t[11:]),file=file)
                         fst_on = True
-
                         check = (check + 1) % 10
-                        # sys.stdout.write('\r'+"working - "+str(check))
-                        # sys.stdout.flush()
-
-                        # print(check)
                     if status != 'en línea':
-
                         fst_on = False
-
-                        # print("DESONECTADO ----->",fst_of)
-                        # print("line",fst_on)
-
                         if fst_of == False:
-
                             print("\n", name, "disconnected", t[11:])  # ,file=f
-
+                            print("\n"+name+" "+status+" "+ str(t[11:]),file=file)
                         fst_of = True
-
                         check = (check + 1) % 10
-                        # sys.stdout.write('\r'+"working - "+str(check))
-                        #
-                        # print(check)
                 else:
                     fst_on = False
                     if fst_of == False:
                         print("\n", name, "[HIDDEN] disconnected/tipying", t[11:])  # ,file=f
-
+                        print("\n"+name+" "+"[HIDDEN] disconnected/tipying"+" "+ str(t[11:]),file=file)
                     fst_of = True
                     check = (check + 1) % 10
-
-
-
         # aturar el programa
         except KeyboardInterrupt as ki:
             print(ki)
@@ -146,7 +123,7 @@ if __name__ == '__main__':
     driver = open_webdriver()
     login_whatsapp(driver)
     try:
-        f = open("guru99.txt", "a+")
+        f = open("Whatsapp_log.txt", "a+")
         track(driver,f)
     except Exception as e:
         print("Panic exit",e)
