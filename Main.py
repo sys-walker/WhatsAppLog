@@ -45,6 +45,14 @@ def find_Contact(driver):
     return name
 
 
+def keep_alive(driver):
+    s = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input")
+    s.click()
+    name2 = "Jobba"
+    s.send_keys(name2)
+    sleep(1)
+    driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input").clear()
+
 def track(driver,file):
     while True:
         # loop whatsapp conactos
@@ -70,6 +78,7 @@ def track(driver,file):
             print(session,file=file)
             while True:
                 if check == 0:
+                    keep_alive(driver)
                     s = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input")
                     s.click()
                     name2 = "Jobba"
