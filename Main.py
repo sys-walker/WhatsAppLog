@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-# https://github.com/rizwansoaib/whatsapp-monitor/find/master
 from selenium.webdriver.firefox.options import Options
 from selenium import webdriver
 import psutil, os, sys
@@ -52,6 +51,7 @@ def track(driver,file):
         try:
             print("Sucessfully QR Code Scanned")
             # buscar contacto
+            # To do what happens if a contact is not found and confirm
             name = find_Contact(driver)
             #
             sleep(2)
