@@ -41,5 +41,5 @@ number test [HIDDEN] disconnected/tipying 15:09:12
 * **rizwansoaib** - *Original work inspiration* - [rizwansoaib](https://github.com/rizwansoaib)
 
 ## Acknowledgments
-* Inspired in rizwansoaib project
+* Inspired in rizwansoaib work - [WhatsApp-Monitor](https://github.com/rizwansoaib/whatsapp-monitor/) 
 
