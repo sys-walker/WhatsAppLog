@@ -52,6 +52,7 @@ def track(driver,file):
         try:
             print("Sucessfully QR Code Scanned")
             # buscar contacto
+            # To do what happens if a contact is not found and confirm
             name = find_Contact(driver)
             #
             sleep(2)
