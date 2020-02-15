@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-# inspiration https://github.com/rizwansoaib/whatsapp-monitor/
 from selenium.webdriver.firefox.options import Options
 from selenium import webdriver
 import psutil, os, sys
