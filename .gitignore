@@ -2,3 +2,4 @@
 # geckodriver.log
 geckodriver.log
 env/
+.idea
