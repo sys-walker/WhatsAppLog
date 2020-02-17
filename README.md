@@ -9,10 +9,15 @@ Sample text
 What things you need to install the software and how to install them
 
 ```
-sudo apt install python3.*
+python3 -m pip install --user virtualenv
+```
+```
+python3 -m venv env
+source env/bin/activate
+which python #to ensure you are running in virtual environment
+pip install requests
 pip install -r requirements.txt
 ```
-
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Usage
@@ -26,5 +31,5 @@ Python3 Main.py
 * **rizwansoaib** - *Original work inspiration* - [rizwansoaib](https://github.com/rizwansoaib)
 
 ## Acknowledgments
-* Inspired in rizwansoaib project
+* Inspired in rizwansoaib project -  [Whatsapp-monitor](https://github.com/rizwansoaib/whatsapp-monitor)
 
