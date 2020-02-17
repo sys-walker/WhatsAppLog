@@ -1,0 +1,1000 @@
+  999  cd Escritorio/
+ 1000  ls
+ 1001  python3 monitor.py 
+ 1002  >captura.py
+ 1003  ls
+ 1004  subl captura.py 
+ 1005  chmod +x captura.py 
+ 1006  ./captura.py 
+ 1007  python3 monitor.py 
+ 1008  clear
+ 1009  python3 monitor.py 
+ 1010  clear
+ 1011  chmod +x *.py
+ 1012  ls
+ 1013  ./monitor.py 
+ 1014  clear
+ 1015  chmod +x *.py
+ 1016  ls
+ 1017  cd 
+ 1018  cd portables/
+ 1019  cd 
+ 1020  cd Escritorio/
+ 1021  ls
+ 1022  clear
+ 1023  ./monitor.py 
+ 1024  clear
+ 1025  ./monitor.py 
+ 1026  cd 
+ 1027  cd portables/
+ 1028  ls
+ 1029  cd whatsapp-monitor/
+ 1030  source env/bin/activate
+ 1031  cd
+ 1032  cd Escritorio/
+ 1033  ls
+ 1034  clear
+ 1035  ./monitor.py 
+ 1036  ./monitor_log.py 
+ 1037  chmod *.py
+ 1038  chmod +x *.py
+ 1039  ls
+ 1040  ./guru.py
+ 1041  ls
+ 1042  cat guru99.txt 
+ 1043  ./monitor_log.py 
+ 1044  ./monitor.py 
+ 1045  ./monitor_log.py 
+ 1046  clear
+ 1047  ./monitor_log.py 
+ 1048  clear
+ 1049  ./monitor_log.py 
+ 1050  ./monitor.py 
+ 1051  ./alive_whats.py 
+ 1052  cd portables/
+ 1053  cd whatsapp-monitor/
+ 1054  source env/bin/activate
+ 1055  cd
+ 1056  cd Escritorio/
+ 1057  clear
+ 1058  ls
+ 1059  ./monitor.py 
+ 1060  clear
+ 1061  chmod +x *.py
+ 1062  ./alive_whats.py 
+ 1063  ./monitor.py
+ 1064  ./alive_whats.py 
+ 1065  ./monitor.py
+ 1066  cd Escritorio/
+ 1067  ls
+ 1068  mdir
+ 1069  mdir WaTracker
+ 1070  mkdir WaTracker
+ 1071  ls
+ 1072  mv --help
+ 1073  mv -v *.py WaTracker/
+ 1074  ls
+ 1075  clear
+ 1076  ls
+ 1077  cat WaTracker/
+ 1078  ls
+ 1079  cd WaTracker/
+ 1080  ls
+ 1081  cat guru.py 
+ 1082  clear
+ 1083  ls
+ 1084  cd ..
+ 1085  mv -v out.txt WaTracker/
+ 1086  ls
+ 1087  man tar
+ 1088  tar
+ 1089  tar --usage
+ 1090  tar --help
+ 1091  cd Escritorio/
+ 1092  tar --help > | grep upd*
+ 1093  tar --help  | grep upd*
+ 1094  tar --help 
+ 1095  tar --help  | grep upd*
+ 1096  tar --help 
+ 1097  tar --help  | grep upd*
+ 1098  tar --help  | grep updat*
+ 1099  tar --help > tar_help.txt
+ 1100  subl tar_help.txt 
+ 1101  ls
+ 1102  >aspectes.txt
+ 1103  rm -rfv conc_*
+ 1104  rm -rfv Conc_*
+ 1105  ls
+ 1106  make
+ 1107  make all
+ 1108  make pack
+ 1109  make
+ 1110  make clean
+ 1111  make pack
+ 1112  make clean
+ 1113  make pack
+ 1114  clear
+ 1115  ls
+ 1116  cd '2a Convocatoria'/
+ 1117  ls
+ 1118  cd ..
+ 1119  cat Makefile 
+ 1120  cd '2a Convocatoria'/
+ 1121  tar cvfz 2a_conv.tar.gz *
+ 1122  cd Escritorio/
+ 1123  ls
+ 1124  tar cvfz test.tar.gz Informe.pdf Informe_0.pdf Informe_1.pdf 
+ 1125  clear
+ 1126  ls
+ 1127  tar cvfz test.tar.gz Informe.pdf Informe_0.pdf Informe_1.pdf 
+ 1128  tar cvfz test.tar.gz Informe.pdf Informe_0.pdf Informe_1.pdf nuevo_file.pdf 
+ 1129  tar zvf test.tar.gz 
+ 1130  tar ztvf test.tar.gz 
+ 1131  clear
+ 1132  ls
+ 1133  chmod +rw *.mp3
+ 1134  mv -v voicemail.mp3 /home/pere/Descargas/
+ 1135  cd
+ 1136  ./bateria
+ 1137  locate .local
+ 1138  locate .local/bin
+ 1139  virtualenv 
+ 1140  virtualenv -h
+ 1141  clear
+ 1142  ls
+ 1143  cd /mnt/
+ 1144  ls
+ 1145  cd ..
+ 1146  cd media/
+ 1147  ls
+ 1148  cd pere/
+ 1149  ls
+ 1150  ls -l
+ 1151  cd B8229F25229EE7A0
+ 1152  ls
+ 1153  cd ..
+ 1154  cd quindous
+ 1155  ls
+ 1156  cd ..
+ 1157  ls
+ 1158  cd guindous/
+ 1159  ls
+ 1160  cd drive_c/
+ 1161  ls
+ 1162  cd users/
+ 1163  ls
+ 1164  cd pere/
+ 1165  ls
+ 1166  cd Escritorio
+ 1167  la
+ 1168  ls
+ 1169  cd ..
+ 1170  ls
+ 1171  cd ..
+ 1172  ls
+ 1173  ls -l
+ 1174  locate Export*
+ 1175  cd 
+ 1176  locate ExportTelegramContacts
+ 1177  cd /home/pere/ppppppppp/
+ 1178  ls
+ 1179  cat Export
+ 1180  cat ExportedContacts
+ 1181  ls
+ 1182  cd ExportedContacts/
+ 1183  ls
+ 1184  cd ..
+ 1185  ls
+ 1186  subl *.vcf
+ 1187  cd Escritorio/
+ 1188  ls
+ 1189  tar cvfz test.tar.gz IGdm.ink
+ 1190  tar cvfz test.tar.gz IGdm.lnk 
+ 1191  tar xtvfz test.tar.gz IGdm.lnk 
+ 1192  tar xtv test.tar.gz IGdm.lnk 
+ 1193  ls
+ 1194  tar --help
+ 1195  tar tv test.tar.gz
+ 1196  tar tvf test.tar.gz
+ 1197  tar cvfz test.tar.gz Informe.pdf Informe_0.pdf Informe_1.pdf nuevo_file.pdf 
+ 1198  tar tvf test.tar.gz
+ 1199  tar tvf - test.tar.gz IGdm.lnk
+ 1200  tar cvfz -u  test.tar.gz IGdm.lnk 
+ 1201  tar tvf -u  test.tar.gz
+ 1202  tar tvzf -u  test.tar.gz
+ 1203  tar tvf test.tar.gz
+ 1204  tar cvzfu  test.tar.gz IGdm.lnk 
+ 1205  tar -cvzfu  test.tar.gz IGdm.lnk 
+ 1206  tar -cvzfr  test.tar.gz IGdm.lnk 
+ 1207  tar -u  test.tar.gz IGdm.lnk 
+ 1208  tar uvf  test.tar.gz IGdm.lnk 
+ 1209  tar cvf test.tar Informe.pdf Informe_0.pdf Informe_1.pdf
+ 1210  ls
+ 1211  rm -rfv test.tar.gz 
+ 1212  ls
+ 1213  tar uvf  test.tar IGdm.lnk 
+ 1214  ls
+ 1215  tar tvf  test.tar IGdm.lnk 
+ 1216  tar cvf test.tar Informe.pdf Informe_0.pdf Informe_1.pdf
+ 1217  ls
+ 1218  tar tvf  test.tar IGdm.lnk 
+ 1219  tar tvf  test.tar
+ 1220  tar cvf  test.tar IGdm.lnk 
+ 1221  tar tvf  test.tar
+ 1222  tar rvf  test.tar
+ 1223  tar tvf  test.tar
+ 1224  tar cvf  test.tar IGdm.lnk 
+ 1225  tar cvf test.tar Informe.pdf Informe_0.pdf Informe_1.pdf
+ 1226  tar rvf  test.tar IGdm.lnk 
+ 1227  tar tvf  test.tar
+ 1228  tar rvf  test2.tar 
+ 1229  la
+ 1230  tar rvf  test2.tar Informe*
+ 1231  tar tvf  test2.tar Informe*
+ 1232  tar rvf  test2.tar nuevo_file.pdf 
+ 1233  tar tvf  test2.tar Informe*
+ 1234  tar rvf  test2.tar nuevo_file.pdf 
+ 1235  tar tvf  test2.tar
+ 1236  clear
+ 1237  tar tvf test2.tar 
+ 1238  tar tvf test2.tar | awk 'print{$1}'
+ 1239  tar tvf test2.tar | awk '{print $1}'
+ 1240  tar tvf test2.tar | awk '{print $5}'
+ 1241  tar tvf test2.tar | awk '{print $6}'
+ 1242  ps -ef | grep firefox
+ 1243  ps -ef | grep firefox > matar.txt
+ 1244  more matar.txt
+ 1245  kill -9 3233
+ 1246  ps -ef | grep firefox > matar.txt
+ 1247  ps -ef | grep firefox
+ 1248  clear
+ 1249  upower -i $(upower -e | grep BAT) | grep --color=never -E "state| to \ full | to \ empty | percentage"
+ 1250  echo 'upower -i $(upower -e | grep BAT) | grep --color=never -E "state| to \ full | to \ empty | percentage"' > bateria
+ 1251  ls
+ 1252  cat bateria 
+ 1253  clear
+ 1254  nano bateria 
+ 1255  cleqr
+ 1256  clear
+ 1257  chmod +x bateria 
+ 1258  ls
+ 1259  ./bateria 
+ 1260  clear
+ 1261  ./bateria 
+ 1262  upower -i $(upower -e | grep BAT) | grep --color=never -E "state| to \ full | to \ empty | percentag"
+ 1263  upower -i $(upower -e | grep BAT) | grep --color=never -E "state| to \ full | to \ empty | pollas"
+ 1264  upower -i $(upower -e | grep BAT) | grep --color=never -E "state| to \ full | to \ empty | percentage"
+ 1265  clear
+ 1266  ./bateria 
+ 1267  ls /usr/bin/
+ 1268  ls /usr/bin/itweb-settings 
+ 1269  cat /usr/bin/install
+ 1270  clear
+ 1271  ls /usr/bin/
+ 1272  c./bateria
+ 1273  cd
+ 1274  ls
+ 1275  ./bateria
+ 1276  clear
+ 1277  ./bateria
+ 1278  clear
+ 1279  ./bateria
+ 1280  clear
+ 1281  hisory
+ 1282  history
+ 1283  ls
+ 1284  cd
+ 1285  ls
+ 1286  cd /media/
+ 1287  ls
+ 1288  cd pere/
+ 1289  ls
+ 1290  cd 
+ 1291  cd /run/
+ 1292  ls
+ 1293  cd user/
+ 1294  ls
+ 1295  cd 1000/
+ 1296  ls
+ 1297  cd gvfs
+ 1298  ls
+ 1299  cd ..
+ 1300  ls
+ 1301  cd 121
+ 1302  sudo cd 121
+ 1303  sudo cd 121/
+ 1304  cd ..
+ 1305  ls
+ 1306  cd user/
+ 1307  ls
+ 1308  cd 1000/
+ 1309  ls
+ 1310  exir
+ 1311  exit
+ 1312  cd /run/user/
+ 1313  ls
+ 1314  cd 1000
+ 1315  ls
+ 1316  cd gvfs
+ 1317  ls
+ 1318  cd  /var/run/user/$UID/gvfs
+ 1319  apt update
+ 1320  sudo apt update
+ 1321  sudo apt upgrade
+ 1322  sudo add-apt-repository ppa:webupd8team/gvfs-libmtp
+ 1323  uname -a
+ 1324  sudo add-apt-repository ppa:langdalepl/gvfs-mtp
+ 1325  lsusb
+ 1326  sudo add-apt-repository ppa:langdalepl/gvfs-mtp
+ 1327  cd /run/user/$UID/gvfs/mtp*
+ 1328  cd /run/user/1000/gvfs/mtp\:host=%5Busb%3A001%2C006%5D/
+ 1329  sudo cd /run/user/1000/gvfs/mtp\:host=%5Busb%3A001%2C006%5D/
+ 1330  sudo ./remove-old-snaps 
+ 1331  ./remove-old-snaps 
+ 1332  cd
+ 1333  ./bateria
+ 1334  apt remove sagemath*
+ 1335  sudo apt remove sagemath*
+ 1336  sudo apt autoremove
+ 1337  sudo rm -rfv /usr/share/glib-2.0/gdb
+ 1338  sudo cd /usr/share/glib-2.0/gdb
+ 1339  sudo cd /usr/share/glib-2.0/
+ 1340  cd /usr/share/glib-2.0/
+ 1341  ls
+ 1342  cd ..
+ 1343  wine IGdm-Setup-2.8.1.exe 
+ 1344  cd Escritorio/Old\ Firefox\ Data/
+ 1345  ls
+ 1346  sudo ./remove-old-snaps safdfsf
+ 1347  sudo ./remove-old-snaps recover
+ 1348  cd /media/
+ 1349  cd guindous/
+ 1350  ls
+ 1351  cd drive_c/
+ 1352  ls
+ 1353  cd 'Program Files'
+ 1354  ls
+ 1355  cd ..
+ 1356  cd 'Program Files (x86)'/
+ 1357  ls
+ 1358  cd ..
+ 1359  ls
+ 1360  cd ..
+ 1361  cd 
+ 1362  cd .wine
+ 1363  ls
+ 1364  cd drive_c
+ 1365  ls
+ 1366  cd 'Program Files (x86)'/
+ 1367  ls
+ 1368  cd ..
+ 1369  ls
+ 1370  cd windows/
+ 1371  ls
+ 1372  cd ..
+ 1373  ls
+ 1374  cd users/
+ 1375  ls
+ 1376  cd pere/
+ 1377  ls
+ 1378  cd
+ 1379  alacarte 
+ 1380  subl
+ 1381  alacarte 
+ 1382  cd /home/pere/.wine/dosdevices/
+ 1383  ls
+ 1384  cd c\:
+ 1385  ls
+ 1386  cd users/pere/
+ 1387  cd Start\ Menu/Programs/
+ 1388  ls
+ 1389  cat IGdm.lnk 
+ 1390  cd ..
+ 1391  cd Local\ Settings/
+ 1392  ls
+ 1393  cd Application\ Data/
+ 1394  LS
+ 1395  ls
+ 1396  cd Programs/
+ 1397  ls
+ 1398  cd IGdm/
+ 1399  ls
+ 1400  wine 'Uninstall IGdm.exe' 
+ 1401  ls
+ 1402  cd ..
+ 1403  ls
+ 1404  cd ..
+ 1405  ls
+ 1406  rm -rfv igdm-updater/
+ 1407  ls
+ 1408  alacarte 
+ 1409  alacarte --help
+ 1410  alacarte -h
+ 1411  alacarte p
+ 1412  cd /usr/share/alacarte
+ 1413  cd Alacarte/
+ 1414  ls
+ 1415  cat MainWindow.py
+ 1416  mv -v .Capturas\ SD/ dotCapturas\ SD/
+ 1417  mv -v .CameraSD/ dotCameraSD/
+ 1418  ls
+ 1419  cd gallery/
+ 1420  cd
+ 1421  cd /media/pere/B8229F25229EE7A0/ordenar25-1-20/targeta sd/gallery
+ 1422  cd /media/pere/B8229F25229EE7A0/ordenar25-1-20/targeta\ sd/gallery
+ 1423  ls
+ 1424  cd cloud/
+ 1425  ls
+ 1426  ls -a
+ 1427  mv -v .secretAlbum secretAlbum
+ 1428  ls
+ 1429  mv -v *.jpg *.png Images/
+ 1430  mv -v *.jpeg *.png Images/
+ 1431  mv -v *.pdf pdf/
+ 1432  mv -v *.pdf Pdf/
+ 1433  cd Escritorio/Old\ Firefox\ Data/WaTracker/
+ 1434  ls
+ 1435  clear
+ 1436  chmod +x *.py
+ 1437  ls
+ 1438  ./temporal.py 
+ 1439  locate geckodriver
+ 1440  ./temporal.py 
+ 1441  >Legit.py
+ 1442  ./message-scheduler.py 
+ 1443  ./messages-sender.py 
+ 1444  chmod +x Legit.py 
+ 1445  ./Legit.py 
+ 1446  ./monitor_log.py 
+ 1447  source env/bin/activate
+ 1448  pip install selenium
+ 1449  ./temporal.py 
+ 1450  ping tunelsalu.udl.cat
+ 1451  skill --help
+ 1452  skill -v --user pere
+ 1453  skill --user pere
+ 1454  ping www.google.com
+ 1455  skill -u pere
+ 1456  whoaiam
+ 1457  whoami
+ 1458  clear
+ 1459  skill
+ 1460  skill -i
+ 1461  cat TestPrac2.sh 
+ 1462  ./TestPrac2.sh 
+ 1463  clear
+ 1464  ./TestPrac2.sh 
+ 1465  clear
+ 1466  ./TestPrac2.sh 
+ 1467  mkdir  output/quijote/
+ 1468  mkdir  output/quijote
+ 1469  rm -rfv  output/quijote/
+ 1470  mkdir  output/quijote
+ 1471  ls
+ 1472  cd output/
+ 1473  ls
+ 1474  cd
+ 1475  cd Escritorio/Indexing/
+ 1476  ./TestPrac2.sh 
+ 1477  clear
+ 1478  ./TestPrac2.sh 
+ 1479  clear
+ 1480  ps -ef | grep idea
+ 1481  kill -9 2710
+ 1482  ps -ef | grep
+ 1483  kill -9 2792
+ 1484  $ tar cvzf org_emp.tgz * -C /opt^C
+ 1485  sudo tar cvzf org_emp.tgz * -C /opt
+ 1486  sudo tar cvzf org_emp.tgz * -C /media
+ 1487  cd /media/
+ 1488  ls
+ 1489  mkdir emp
+ 1490  cd /temp
+ 1491  ls
+ 1492  cd 
+ 1493  cd /tmp/
+ 1494  ls
+ 1495  clear
+ 1496  ls
+ 1497  clear
+ 1498  ls
+ 1499  /run/user/1000/gvfs/dav:host=cv.udl.cat,ssl=true,prefix=%2Fdav%2F102009-1718$sñspf
+ 1500  ls
+ 1501  tar cvzf org_emp.tgz * -C /opt
+ 1502  cd /opt/
+ 1503  ls
+ 1504  locate org_emp.tgz
+ 1505  cd mkdir org_emp
+ 1506  mkdir org_emp
+ 1507  ls
+ 1508  cd '/run/user/1000/gvfs/dav:host=cv.udl.cat,ssl=true,prefix=%2Fdav%2F102009-1718'
+ 1509  ls
+ 1510  alacarte
+ 1511  cd /media
+ 1512  cd pere/
+ 1513  ls
+ 1514  cd B8229F25229EE7A0/
+ 1515  locate *.mp4
+ 1516  ls -l
+ 1517  ls
+ 1518  locate /home/
+ 1519  find
+ 1520  locate mp4
+ 1521  ls -l *.mp4
+ 1522  ls -r *.mp4
+ 1523  locate -r *.mp4
+ 1524  find --help
+ 1525  clear
+ 1526  find --help
+ 1527  find -L /home/pere/Escritorio/
+ 1528  clear
+ 1529  pwd
+ 1530  cd
+ 1531  ls
+ 1532  find ~/media/pere/B8229F25229EE7A0 -iname *.mp4
+ 1533  find ~/media/pere/B8229F25229EE7A0 -iname *opera*.txt
+ 1534  find ~/media/pere/B8229F25229EE7A0
+ 1535  clear
+ 1536  cd /media/pere/B8229F25229EE7A0/
+ 1537  ls
+ 1538  cd ordenar/
+ 1539  ls
+ 1540  cd Pere\ Rollon/
+ 1541  ls
+ 1542  cd Nueva\ carpeta/
+ 1543  ls
+ 1544  cp --help
+ 1545  cp -fv 'Clase teórica - Permiso B. 6 horas_1.mp4' /home/pere/Escritorio/
+ 1546  ls
+ 1547  clear
+ 1548  ls
+ 1549  d 
+ 1550  cd
+ 1551  cd /
+ 1552  ls
+ 1553  cd mnt/
+ 1554  ls
+ 1555  cd ..
+ 1556  ls
+ 1557  cd /tmp/
+ 1558  ls
+ 1559  cd lol
+ 1560  cd Lol
+ 1561  ls
+ 1562  tar cvzf igor_empresa.tgz *
+ 1563  ls
+ 1564  mv  -fv igor_empresa.tgz /home/pere/
+ 1565  clear
+ 1566  ls
+ 1567  cd /home/pere/
+ 1568  ls
+ 1569  declare -i a = 5
+ 1570  declare i a = 5
+ 1571  declare i a=5
+ 1572  a=5-2
+ 1573  echo $a
+ 1574  declare i a=46.4
+ 1575  declare f a=46.4
+ 1576  declare a=46.4
+ 1577  python -x
+ 1578  ls
+ 1579  > repartir.py
+ 1580  chmod +x repartir.py 
+ 1581  clear
+ 1582  subl repartir.py 
+ 1583  ./repartir.py 
+ 1584  subl repartir.py 
+ 1585  ./repartir.py 
+ 1586  subl repartir.py 
+ 1587  ./repartir.py 
+ 1588  > repartir.py 
+ 1589  subl repartir.py 
+ 1590  ./repartir.py 
+ 1591  subl repartir.py 
+ 1592  ./repartir.py 
+ 1593  subl repartir.py 
+ 1594  ./repartir.py 
+ 1595  ps -ef | grep firefox
+ 1596  kill -9 2150
+ 1597  ps -ef 
+ 1598  clear
+ 1599  ps -ef | grep firefox
+ 1600  ps -ef | grep subl
+ 1601  top
+ 1602  kill -9 2368
+ 1603  top
+ 1604  kill -9 4597
+ 1605  top
+ 1606  natilus
+ 1607  nautilus
+ 1608  sudo shutdown -r now
+ 1609  tar cvzf pyfil.tgz *.py requirements.txt
+ 1610  rm -rfv *
+ 1611  ls
+ 1612  tar tvzf pyfil.tgz *.py requirements.txt
+ 1613  tar tvzf pyfil.tgz
+ 1614  tar xvzf pyfil.tgz
+ 1615  python3 --help
+ 1616  python3 -m
+ 1617  cd Escritorio/autosender/
+ 1618  python3 -m venv app_env
+ 1619  ls
+ 1620  source app_env/bin/activate
+ 1621  deactivate 
+ 1622  nano requeriments.txt
+ 1623  source app_env/bin/activate
+ 1624  pip3 install -r requirements.txt
+ 1625  ls
+ 1626  mv -vf requeriments.txt requirements.txt
+ 1627  pip3 install -r requirements.txt
+ 1628  ls
+ 1629  ./guru.py 
+ 1630  ./monitor.py 
+ 1631  subl monitor
+ 1632  subl monitor.py 
+ 1633  ./monitor.py 
+ 1634  mv monitor.py online_once_sender.py
+ 1635  subl online_once_sender.py 
+ 1636  python -x
+ 1637  clear
+ 1638  subl online_once_sender.py 
+ 1639  ./online_once_sender.py 
+ 1640  😩😜😜😜😜😜
+ 1641  ./online_once_sender.py 
+ 1642  cd Escritorio/autosender/
+ 1643  source app_env/bin/activate
+ 1644  ./online_once_sender.py 
+ 1645  pwd
+ 1646  ./online_once_sender.py 
+ 1647  cd Escritorio/autosender/
+ 1648  source app_env/bin/activate
+ 1649  ./online_once_sender.py 
+ 1650  >sincronizar.py
+ 1651  >pid_sincro.txt
+ 1652  cd Escritorio/autosender/
+ 1653  source app_env/bin/activate
+ 1654  ./online_once_sender.py 
+ 1655  clear
+ 1656  cd Peter/
+ 1657  clear
+ 1658  chmod +x *.py
+ 1659  ./sincronizar.py 
+ 1660  d
+ 1661  ls
+ 1662  ./te
+ 1663  ./telegram_notif.py 
+ 1664  clear
+ 1665  ./sincronizar.py 
+ 1666  chmod +x *.py
+ 1667  ./killer.py 
+ 1668  chmod +x *.py
+ 1669  ./killer.py 
+ 1670  chmod +x *.py
+ 1671  ./killer.py 
+ 1672  clear
+ 1673  ls
+ 1674  ./sincronizar.py 
+ 1675  cd ,,
+ 1676  cd ..
+ 1677  clear
+ 1678  source app_env/bin/activate
+ 1679  clera
+ 1680  clear
+ 1681  cd Peter/
+ 1682  clear
+ 1683  ls
+ 1684  more killer.py 
+ 1685  more sincronizar.py 
+ 1686  ./killer.py 
+ 1687  cd Escritorio/
+ 1688  ls
+ 1689  cd autosender/
+ 1690  ls
+ 1691  source app_env/bin/activate
+ 1692  clear
+ 1693  ls
+ 1694  ./online_once_sender.py 
+ 1695  clear
+ 1696  cd Peter/
+ 1697  ls
+ 1698  chmod +x *.py
+ 1699  clear
+ 1700  ./own_code.py 
+ 1701  cd Escritorio/autosender/
+ 1702  clear
+ 1703  source app_env/bin/activate
+ 1704  clear
+ 1705  python -x
+ 1706  clear
+ 1707  cd Peter/
+ 1708  clear
+ 1709  ./own_code.py 
+ 1710  clear
+ 1711  ./own_code.py 
+ 1712  ./telegram_notif.py 
+ 1713  cd ..
+ 1714  ./online_once_sender.py 
+ 1715  cd Peter/
+ 1716  ./online_once_sender.py 
+ 1717  ls
+ 1718  ./te
+ 1719  ./telegram_notif.py 
+ 1720  ./own_code.py 
+ 1721  ls
+ 1722  ./bateria 
+ 1723  clear
+ 1724  ./bateria 
+ 1725  clear
+ 1726  ./bateria 
+ 1727  shutdown -r now
+ 1728  cd Escritorio/
+ 1729  clear
+ 1730  cd autosender/
+ 1731  ls
+ 1732  source app_env/bin/activate
+ 1733  cd Peter/
+ 1734  clear
+ 1735  ./own_code.py 
+ 1736  clear
+ 1737  ps -ef grep idea
+ 1738  ps -ef |grep idea
+ 1739  kil -9 17460
+ 1740  kill -9 17460
+ 1741  ps -ef |grep idea
+ 1742  kill -9 1759
+ 1743  kill -9 17459
+ 1744  ps -ef |grep idea
+ 1745  kill -9 17549
+ 1746  python -X
+ 1747  python -x
+ 1748  ./own_code.py 
+ 1749  ps -ef |grep idea
+ 1750  kill -9 18545
+ 1751  ps -ef |grep idea
+ 1752  ./own_code.py 
+ 1753  ping www.google.com
+ 1754  ping localhost
+ 1755  ping www.google.com
+ 1756  clear
+ 1757  ./own_code.py 
+ 1758  cd .local/
+ 1759  ls
+ 1760  cd share/
+ 1761  ls
+ 1762  cd a
+ 1763  cd applications/
+ 1764  ls
+ 1765  cd wine/
+ 1766  ls
+ 1767  cd Programs/
+ 1768  ls
+ 1769  cd /home/pere/.local/share/applications/wine/Programs/
+ 1770  locate *.desktop
+ 1771  sudo
+ 1772  sudo -i
+ 1773  source sender_env/bin/activate
+ 1774  ./killer.py 
+ 1775  subl killer.py 
+ 1776  ./killer.py 
+ 1777  ./killer.py terminate
+ 1778  ./killer.py t
+ 1779  ./killer.py tgjhkjbj
+ 1780  ./killer.py 78
+ 1781  ./killer.py tgjhkjbj
+ 1782  ./killer.py 78
+ 1783  ./killer.py
+ 1784  ./killer.py 78
+ 1785  source sender_env/bin/activate
+ 1786  clear
+ 1787  ./sincronizar.py 
+ 1788  subl sincronizar.py 
+ 1789  ./sincronizar.py 
+ 1790  > multi.py
+ 1791  chmod +x multi.py 
+ 1792  subl multi.py 
+ 1793  ./multi.py 
+ 1794  subl multi.py 
+ 1795  ./multi.py 
+ 1796  ./sincronizar.py 
+ 1797  source app_env/bin/activate
+ 1798  ./online_once_sender.py 
+ 1799  pip3 install selenium
+ 1800  ./online_once_sender.py 
+ 1801  pip install -r requirements.txt 
+ 1802  pip install -r requirements.txt  --user
+ 1803  chmod +.py
+ 1804  source tenv/bin/activate
+ 1805  ./own_code.py 
+ 1806  cd..
+ 1807  deactivate 
+ 1808  cd ..
+ 1809  tar cvzf selenium.tgz *
+ 1810  pip --help
+ 1811  pip uninstall selenium
+ 1812  pip uninstall Pillow
+ 1813  sudo pip uninstall Pillow
+ 1814  pip install Pillow==5.1.0
+ 1815  sudo pip install Pillow==5.1.0
+ 1816  pip install --upgrade pip
+ 1817  pip install --upgrade pip --user
+ 1818  source tenv/bin/activate
+ 1819  source app_env/bin/activate
+ 1820  which python
+ 1821  sudo apt-get install python3.7-dev
+ 1822  python -x
+ 1823  ./Main.py 
+ 1824  pip freeze > requirements.txt
+ 1825  pip freeze 
+ 1826  source venv/bin/activate
+ 1827  clear
+ 1828  pip freeze
+ 1829  ./Main.py 
+ 1830  mkdir github_projects
+ 1831  cd github_projects/
+ 1832  clear
+ 1833  git clone https://github.com/sys-walker/WhatsAppLog.git
+ 1834  cd WhatsAppLog/
+ 1835  python3 -m venv env
+ 1836  source env/bin/activate
+ 1837  ls
+ 1838  chmod +x geckodriver *.py
+ 1839  ls
+ 1840  pip3 install -r requirements.txt 
+ 1841  clear
+ 1842  ls
+ 1843  ./Main.py 
+ 1844  pip install selenium
+ 1845  ./Main.py 
+ 1846  pip install -r requirements.txt 
+ 1847  ./Main.py 
+ 1848  clear
+ 1849  pip install selenium
+ 1850  pip install -r requirements.txt 
+ 1851  ./Main.py 
+ 1852  pip install -r requirements.txt 
+ 1853  pip install -r requirements.txt  --user
+ 1854  pip install -r requirements.txt clear
+ 1855  clear
+ 1856  which python
+ 1857  ls
+ 1858  cat Main.py 
+ 1859  python
+ 1860  ./Main.py 
+ 1861  pip install apt_dpkg
+ 1862  clear
+ 1863  ./Main.py 
+ 1864  sudo pip install selenium
+ 1865  ./Main.py 
+ 1866  sudo pip3 install selenium
+ 1867  deactivate 
+ 1868  pip unistall selenium
+ 1869  pip uninstall selenium
+ 1870  sudo pip uninstall selenium
+ 1871  ./Main.py 
+ 1872  source env/bin/activate
+ 1873  ./Main.py 
+ 1874  python3 Main.py 
+ 1875  cat Whatsapp_log.txt 
+ 1876  ./Main.py 
+ 1877  python3 Main.py 
+ 1878  ./Main.py 
+ 1879  python3 Main.py 
+ 1880  ./Main.py 
+ 1881  cd
+ 1882  cd Descargas/
+ 1883  ls
+ 1884  dpkg -i shashlik_0.9.3.deb 
+ 1885  sudo dpkg -i shashlik_0.9.3.deb 
+ 1886  sudo snap install anbox-installer --classic
+ 1887  sudo snap uninstall anbox-installer --classic
+ 1888  sudo snap uninstall anbox-installer
+ 1889  sudo snap 
+ 1890  sudo snap install --devmode --beta anbox-installer 
+ 1891  snap help refresh
+ 1892  anbox
+ 1893  clear
+ 1894  ls
+ 1895  git add .
+ 1896  git commit -m "added gitignore"
+ 1897  git push origin master
+ 1898  git
+ 1899  git status 
+ 1900  git cherry -v
+ 1901  git checkout 
+ 1902  git push
+ 1903  cd ..
+ 1904  clear
+ 1905  ls
+ 1906  rm -rf WhatsAppLog/
+ 1907  ls
+ 1908  git clone https://github.com/sys-walker/WhatsAppLog.git
+ 1909  clear
+ 1910  mkdir /home/pere/.local/share/applications/appimagekit-franz.desktop
+ 1911  clear
+ 1912  mkdir /home/pere/portables/Franz/
+ 1913  cd  /home/pere/portables/Franz/
+ 1914  ls
+ 1915  mv -v Franz-5.4.1.AppImage Franz-5.3.3-x86_64.AppImage 
+ 1916  ls
+ 1917  chmod +x Franz-5.3.3-x86_64.AppImage 
+ 1918  mv -v Franz-5.3.3-x86_64.AppImage franz-5.3.3-x86_64.AppImage 
+ 1919  ls
+ 1920  cd github_projects/
+ 1921  ls
+ 1922  cd WhatsAppLog/
+ 1923  ls
+ 1924  >.gitignore
+ 1925  nano .gitignore 
+ 1926  cd
+ 1927  clear
+ 1928  sudo apt-get update -fix-missind
+ 1929  sudo apt-get update -fix-missing
+ 1930  sudo apt-get h
+ 1931  sudo apt-get update -f
+ 1932  sudo apt-get update --fix-missing
+ 1933  sudo dpkg --configure-a
+ 1934  sudo dpkg --configure -a
+ 1935  sudo rm /var/lib/apt/lists/lock 
+ 1936  sudo rm /var/cache/apt/archives/lock 
+ 1937  sudo apt-get update --fix-missing
+ 1938  sudo apt-get
+ 1939  sudo apt-get update
+ 1940  sudo apt-get dist-upgrade 
+ 1941  sudo apt-get install libc6:i386
+ 1942  sudo apt --fix-broken install
+ 1943  sudo apt-get update
+ 1944  sudo apt-get dist-upgrade 
+ 1945  clear
+ 1946  cd Descargas/
+ 1947  ls
+ 1948  unzip ngrok-stable-linux-amd64.zip 
+ 1949  clear
+ 1950  ls
+ 1951  ./ngrok 
+ 1952  clear
+ 1953  ./ngrok authtoken 1XrHqTVQusTyz4Uj7T6rEctPgrD_7wSuxSVMTZhDccwtTHgQp
+ 1954  ./ngrok http 4444
+ 1955  ./ngrok tcp 4444
+ 1956  ./ngrok http 4444
+ 1957  sudo apt-get install apache2
+ 1958  sudo service apache2 start
+ 1959  sudo systemctl status apache2.service
+ 1960  sudo apt-get purge apache2
+ 1961  sudo apt-get autoremove 
+ 1962  sudo apt-get install apache2
+ 1963  sudo gedit /etc/apache2/ports.conf 
+ 1964  sudo gedit /etc/apache2/sites-enabled/000-default.conf
+ 1965  sudo systemctl status apache2.service
+ 1966  sudo systemctl restart apachec2
+ 1967  sudo systemctl restart apache2
+ 1968  sudo systemctl status apache2.service
+ 1969  ./ngrok http 4444
+ 1970  clear
+ 1971  ls
+ 1972  cd 
+ 1973  locate franz
+ 1974  gedit /home/pere/.local/share/applications/appimagekit-franz.desktop
+ 1975  franz
+ 1976  ls
+ 1977  gedit /home/pere/.local/share/applications/appimagekit-franz.desktop
+ 1978  clear
+ 1979  cd Descargas/
+ 1980  ls
+ 1981  mv -v Franz-5.4.1.AppImage /home/pere/portables/Franz/
+ 1982  cd /opt
+ 1983  ls
+ 1984  mv -v Franz-5.4.1.AppImage /home/pere/portables/Franz/
+ 1985  gedit /home/pere/.local/share/applications/appimagekit-franz.desktop
+ 1986  /home/pere/.local/share/applications/appimagekit-franz.desktop
+ 1987  nmcli
+ 1988  nmcli dev
+ 1989  nmcli dev status 
+ 1990  nmcli dev
+ 1991  nmcli
+ 1992  cat /etc/network/interfaces
+ 1993  gedit /etc/network/interfaces
+ 1994  ifconfig
+ 1995  cat /etc/network/interfaces
+ 1996  ls -lrt /var/lib/dhcp/
+ 1997  chmod +x geckodriver
+ 1998  history > h.txt
