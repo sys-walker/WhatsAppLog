@@ -1,10 +1,23 @@
 #!/usr/bin/env python3
 
-from selenium.webdriver.firefox.options import Options
-from selenium import webdriver
-import psutil, os, sys
-from PIL import Image
+import argparse, os, psutil, signal, sys, threading
 from time import strftime, sleep
+from PIL import Image
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+
+xpath_field_find_contact = "/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/div/div[2]"
+xpath_found_contact = "/html/body/div[1]/div/div/div[3]/div/div[2]/div[1]/div/div/div[3]/div/div/div[2]/div[1]/div[" \
+                       "1]/span/span "
+contact_status_tmp = "/html/body/div[1]/div/div/div[4]/div/header/div[2]/div[2]"
+
+
+def signal_handler(signal, frame):
+    if wa_options.filename != "":
+        f.close()
+
+    driver.quit()
+    sys.exit(0)
 
 
 def close():
@@ -14,14 +27,20 @@ def close():
 
 
 def open_webdriver():
+    global f
+    if wa_options.filename != "":
+        f = open(wa_options.filename, "a+")
     options = Options()
-    options.headless = True
+    options.headless = wa_options.debug
     driver = webdriver.Firefox(executable_path=os.getcwd() + '/geckodriver', options=options)
     driver.get("https://web.whatsapp.com")
     return driver
 
 
-def login_whatsapp(driver):
+def login_whatsapp():
+    if not wa_options.debug:
+        input("Please Login via web browser and press [Enter]")
+        return
     print("QR Code Generating")
     sleep(5)
     driver.save_screenshot("screenshot.png")
@@ -29,111 +48,123 @@ def login_whatsapp(driver):
     image = Image.open('screenshot.png')
     image.show()
     sleep(5)
-    input("Scan QR and press anykey to continue...")
+    input("Scan QR and press [Enter] to continue...")
+    print("Wait...")
     close()
+    sleep(5)
 
 
-def find_Contact(driver):
-    s = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input")
-    s.click()
-    name = input("Please enter Contact:>>>     ")
-    s.send_keys(name)
-    sleep(1)
-    open_chat = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[2]/div[1]/div/div/div[2]')
-    open_chat.click()
-    driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input").clear()
-    return name
+def keep_alive():
+    try:
+        while True:
+            s = driver.find_element_by_xpath(xpath_field_find_contact)
+            s.click()
+            name2 = "Jobba"
+            s.send_keys(name2)
+            sleep(1)
+            s.clear()
+            sleep(10)
+    except Exception as e:
+        print("Connection Closed", e)
+        os.kill(os.getpid(), signal.SIGINT)
 
 
-def keep_alive(driver):
-    s = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input")
-    s.click()
-    name2 = "Jobba"
-    s.send_keys(name2)
-    sleep(1)
-    driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input").clear()
-
-def track(driver,file):
+def find_contact():
     while True:
-        # loop whatsapp conactos
-        try:
-            print("Sucessfully QR Code Scanned")
-            # buscar contacto
-            # To do what happens if a contact is not found and confirm
-            name = find_Contact(driver)
-            #
-            sleep(2)
-            os.system('clear')
-            print("Now tracking is live\n")
+        contact_finder = driver.find_element_by_xpath(xpath_field_find_contact)
+        contact_finder.click()
+
+        contact_finder.clear()
+        name = input("contact:")
+        if name != "":
+            contact_finder.send_keys(name)
+            print("Finding ", name)
+            sleep(5)
+            chat_divs_array = driver.find_elements_by_class_name("_210SC")
+            for chat_div in chat_divs_array:
+                if chat_div.find_elements_by_class_name("_3CneP"):
+                    if name.lower() in chat_div.find_element_by_class_name("_3CneP").text.lower():
+                        return chat_div.find_element_by_class_name("_3CneP")
+        print("Couldn't Find make you sure that contact exists!")
+        sleep(2)
+
+
+def argsparser():
+    global wa_options
+    parser = argparse.ArgumentParser(description='WhatsApp Logging')
+    parser.add_argument('-f', '--filename',
+                        dest="filename",
+                        default="", help="Set outputfile")
+    parser.add_argument('-d', '--debug',
+                        dest="debug",
+                        action='store_false', default=True, help="Enables debug via webbroser visible")
+    wa_options = parser.parse_args()
+    print(wa_options)
+
+
+def save_log(*args):
+    for p in args:
+        if wa_options.filename != "":
+            print(p, file=f)
+        print(p)
+
+
+def track(driver, name):
+    sleep(2)
+    os.system('clear')
+    print("Now tracking is live\n")
+    fst_on = False
+    fst_of = False
+    t = strftime("%Y-%m-%d %H:%M:%S")
+
+    header = "============= " + str(name) + " ============="
+    session = "Session Started at " + str(t) + "\n"
+    save_log(header, session)
+
+    threading.Thread(target=keep_alive, daemon=True).start()
+    while True:
+        statusList = driver.find_elements_by_xpath(contact_status_tmp)
+        sys.stdout.flush()
+        if len(statusList) != 0:
+            if statusList[0].text == 'en línea':
+                fst_of = False
+                if not fst_on:
+                    save_log(name + " " + statusList[0].text + " " + str(t[11:]))
+
+                fst_on = True
+            elif statusList[0].text == 'escribiendo...':
+                fst_on = False
+                if not fst_of:
+                    save_log(name + " " + "escribiendo..." + str(t[11:]))
+                fst_of = True
+            else:
+                fst_on = False
+                if not fst_of:
+                    save_log(name + " " + statusList[0].text + " " + str(t[11:]))
+                fst_of = True
+        else:
             fst_on = False
-            fst_of = False
-            check = 0
-            t = strftime("%Y-%m-%d %H:%M:%S")
-
-            header = "============= " + str(name) + " ============="
-            session = "Session Started at " + str(t) + "\n"
-            print(header)
-            print(session)
-            print(header, file=file)
-            print(session,file=file)
-            while True:
-                if check == 0:
-                    keep_alive(driver)
-                    s = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input")
-                    s.click()
-                    name2 = "Jobba"
-                    s.send_keys(name2)
-                    sleep(1)
-                    driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input").clear()
-                else:
-                    sleep(1)
-
-                sys.stdout.write('\r' + "working ... " + str(check))
-                sys.stdout.flush()
-
-                statusList= list(driver.find_elements_by_class_name("_315-i"))
-                status = "Undefined" if len(statusList)==0 else statusList[0].text
-                
-                sys.stdout.flush()
-                if len(statusList)!=0:
-                    if status == 'en línea':
-                        fst_of = False
-                        if fst_on == False:
-                            print("\n", name, status, t[11:])
-                            print("\n"+name+" "+status+" "+ str(t[11:]),file=file)
-                        fst_on = True
-                        check = (check + 1) % 10
-                    if status != 'en línea':
-                        fst_on = False
-                        if fst_of == False:
-                            print("\n", name, "disconnected", t[11:])  # ,file=f
-                            print("\n"+name+" "+status+" "+ str(t[11:]),file=file)
-                        fst_of = True
-                        check = (check + 1) % 10
-                else:
-                    fst_on = False
-                    if fst_of == False:
-                        print("\n", name, "[HIDDEN] disconnected/tipying", t[11:])  # ,file=f
-                        print("\n"+name+" "+"[HIDDEN] disconnected/tipying"+" "+ str(t[11:]),file=file)
-                    fst_of = True
-                    check = (check + 1) % 10
-        # aturar el programa
-        except KeyboardInterrupt as ki:
-            print(ki)
-            print("[Ctrl+C] Program Stopped")
-            file.close()
-            driver.quit()
-            break
+            if not fst_of:
+                save_log(name + " " + "[HIDDEN] disconnected/tipying" + " " + str(t[11:]))
+            fst_of = True
 
 
 if __name__ == '__main__':
+    global wa_options
+    global driver
+    driver = None
+    signal.signal(signal.SIGINT, signal_handler)
+    argsparser()
     print("Please Wait Starting whatsapp-logging")
 
-    driver = open_webdriver()
-    login_whatsapp(driver)
     try:
-        f = open("Whatsapp_log.txt", "a+")
-        track(driver,f)
+        driver = open_webdriver()
+        login_whatsapp()
+        whatsapp_contact = find_contact()
+        whatsapp_contact.click()
+        track(driver, whatsapp_contact.text)
     except Exception as e:
-        print("Panic exit",e)
-        driver.quit()
+        print("Panic exit! ", e)
+        if driver is not None:
+            driver.quit()
+        exit(1)
